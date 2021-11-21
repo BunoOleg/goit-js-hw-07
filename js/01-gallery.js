@@ -17,8 +17,7 @@ const galleryPic = galleryItems
     />
   </a>
 </div>`
-  )
-  .join("");
+  ).join("");
 
 let currentIndex = 0;
 
@@ -69,5 +68,4 @@ const openOriginal = function (event) {
   setModalSrc(event.target.dataset.source);
   instance.show();
 };
-
 gallery.addEventListener("click", openOriginal);
